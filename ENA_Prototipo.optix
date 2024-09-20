@@ -1,0 +1,44 @@
+Project:
+ Name: ENA_Prototipo
+ GUID: 93c0cc511d41eaf57b96d32409eece43
+ ProjectNamespaceIndex: 7
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.4
+ CoreVersion: 3.0
+ Dependencies:
+  2:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 4.0
+  3:
+   Uri: 'urn:FTOptix:UI'
+   Module: FTOptix.UI
+   Version: 12.4
+  4:
+   Uri: 'urn:FTOptix:HMIProject'
+   Module: FTOptix.HMIProject
+   Version: 6.1
+  5:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 2.0
+  6:
+   Uri: 'urn:FTOptix:Retentivity'
+   Module: FTOptix.Retentivity
+   Version: 1.0
+ Statistics:
+  TotalNodeCount: 169
+  Objects: 76
+  ObjectTypes: 1
+  Variables: 92
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 2
+  ReferenceTypes: 0
+  Files: 20
+ Nodes:
+ - File: Nodes/ENA_Prototipo.yaml
