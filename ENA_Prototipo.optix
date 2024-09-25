@@ -58,8 +58,8 @@ Project:
    Module: FTOptix.NetLogic
    Version: 3.0
  Statistics:
-  TotalNodeCount: 17411
-  Objects: 4040
+  TotalNodeCount: 17412
+  Objects: 4041
   ObjectTypes: 23
   Variables: 13343
   VariableTypes: 0
@@ -67,6 +67,6 @@ Project:
   Methods: 5
   References: 18
   ReferenceTypes: 0
-  Files: 27
+  Files: 28
  Nodes:
  - File: Nodes/ENA_Prototipo.yaml
