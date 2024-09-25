@@ -348,55 +348,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"pt-BR","Text":"Power"}
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel1
-          Type: NavigationPanelItem
-          Children:
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"pt-BR","Text":"Network"}
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel2
-          Type: NavigationPanelItem
-          Children:
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"pt-BR","Text":"Multiplas Conexões"}
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel3
-          Type: NavigationPanelItem
-          Children:
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
             Value: {"LocaleId":"pt-BR","Text":"Painel MQTT"}
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/Painel_MQTT"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -458,5 +414,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 175.0
+        Value: 120.0
 - File: Screens/Screens.yaml
+- File: Painel/Painel.yaml
+- File: NetworkLibrary/NetworkLibrary.yaml
