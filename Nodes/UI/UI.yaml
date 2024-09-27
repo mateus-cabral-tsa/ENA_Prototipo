@@ -2,7 +2,6 @@ Name: UI
 Type: UICategoryFolder
 Children:
 - Name: DefaultStyleSheet
-  Id: g=8da2b5865c73184b748c69f73d34bedf
   Type: StyleSheet
   Children:
   - Name: ButtonStyles
@@ -191,7 +190,7 @@ Children:
   - Name: StyleSheet
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/ENA_Prototipo/UI/DefaultStyleSheet"
+    Value: "/Objects/ENA_Prototipo/UI/ISA sheet/ISAStyleSheet1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -303,7 +302,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
-          Value: "#ffffff"
+          Value: "#f2f0f0"
         - Name: Image1
           Type: Image
           Children:
@@ -358,6 +357,81 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Painel2
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/Planta_CCM"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Painel3
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/DashbordCCM"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Painel4
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/Painel_MQTT"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Painel5
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/Planta_CCM"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Painel6
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/ENA_Prototipo/UI/Painel/DashbordCCM"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: CurrentPanel
         Type: NodePointer
         DataType: NodeId
@@ -405,7 +479,7 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
-        Value: "Default"
+        Value: "ISANavPanel"
       - Name: Appearance
         Type: BaseVariableType
         DataType: String
@@ -415,7 +489,15 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 120.0
+      - Name: TabWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
 - File: Screens/Screens.yaml
 - File: Painel/Painel.yaml
 - File: NetworkLibrary/NetworkLibrary.yaml
-- File: Safety/Safety.yaml
+- File: Rele/Rele.yaml
+- File: Inversor/Inversor.yaml
+- File: ISA_sheet/ISA_sheet.yaml
+- File: 755/755.yaml

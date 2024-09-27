@@ -13,9 +13,10 @@ using uPLibrary.Networking.M2Mqtt.Messages;
 
 public class PublisherLogic : BaseNetLogic
 {
-    public override void Start(string topic, string brokerIpAd)
+    public override void Start()
     {
-        var brokerIpAddressVariable = Project.Current.GetVariable(brokerIpAd);
+        
+        var brokerIpAddressVariable = Project.Current.GetVariable("model/BrokerIp");
 
         // Create a client connecting to the broker (default port is 1883)
         publishClient = new MqttClient(brokerIpAddressVariable.Value);
@@ -39,12 +40,13 @@ public class PublisherLogic : BaseNetLogic
     [ExportMethod]
     public void PublishMessage()
     {
-        var variable1 = Project.Current.GetVariable("Model/Variable1");
-        variable1.Value = new Random().Next(0, 101);
+        var topic = Project.Current.GetVariable("Model/Topic");
+        var data = Project.Current.GetVariable("Model/Topic");
+        
 
         // Publish a message
-        ushort msgId = publishClient.Publish("/my_topic", // topic
-            System.Text.Encoding.UTF8.GetBytes(((int)variable1.Value).ToString()), // message body
+        ushort msgId = publishClient.Publish(topic.ToString(), // topic
+            System.Text.Encoding.UTF8.GetBytes(((int)data.Value).ToString()), // message body
             MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, // QoS level
             false); // retained
     }
